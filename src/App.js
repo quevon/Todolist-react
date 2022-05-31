@@ -7,7 +7,7 @@ import  Todolist from './components/Todolist/Todolist';
 
 export default function App() {
   return (
-    <div class="app-main">
+    <div className="app-main">
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />}/>

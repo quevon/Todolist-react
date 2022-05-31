@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './Todolist.css'
+import TodoItem from './TodoItem'
 
 const Todolist = () =>{
     const [state, setState] = useState({
@@ -18,7 +19,13 @@ const Todolist = () =>{
         const list = todolist
         list.push(todo)
 
-        setState({...state, todolist: list})
+        setState({todo: '', todolist: list})
+    }
+    const deleteTodo =  (index) =>{
+        const list = todolist
+        list.splice(index, 1)
+
+        setState({todo: '', todolist: list})
     }
     return (
         <div className="todolist-container">
@@ -37,11 +44,12 @@ const Todolist = () =>{
                    todolist.length ?
                     todolist.map((value, index) => {
                         return(
-                            <div className="row-wrapper">
-                                <span>{value}</span>
-                                <button>Edit</button>
-                                <button>Delete</button>
-                            </div>
+                            <TodoItem
+                                key={index}
+                                index={index}
+                                value={value}
+                                deleteTodo={deleteTodo}
+                            />
                         )
                     }) : <span> No Records found</span>
                }
