@@ -5,12 +5,13 @@ export default function TodoItem(props){
     const {
         index,
         value,
-        deleteTodo
+        deleteTodo,
+        handleOnClickEdit
     } = props
     return(
         <div key={index} className="row-wrapper">
             <span>{value}</span>
-            <button>Edit</button>
+            <button onClick={() => handleOnClickEdit(index, value)}>Edit</button>
             <button onClick={() => deleteTodo(index)}>Delete</button>
         </div>
     )
