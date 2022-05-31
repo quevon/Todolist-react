@@ -1,0 +1,38 @@
+.todolist-container{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+}
+.todolist-container .form-wrapper{
+    display:flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.todolist-container .form-wrapper input{
+    width: 80%;
+    padding:10px;
+    font-size: 2rem;
+}
+.todolist-container .form-wrapper button{
+    width: 20%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.todolist-container .table-main .row-wrapper{
+    display:flex;
+    flex-direction: row;
+    gap: 2%;
+    padding:10px 0 10px 0;
+}
+.table-main .row-wrapper span{
+    width: 60%;
+    font-size: 2rem;
+}
+.table-main .row-wrapper button{
+    width: 20%;
+    font-size: 1rem;
+    cursor: pointer;
+}

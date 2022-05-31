@@ -1,0 +1,12 @@
+.home-main{
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.home-main .btn-container{
+    text-align: center;
+}
+.home-main .btn-container a{
+    text-decoration: none;
+}
