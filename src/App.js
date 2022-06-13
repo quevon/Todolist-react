@@ -10,7 +10,7 @@ export default function App() {
     <div className="app-main">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path="/todolist" element={<Todolist />}/>  
         </Routes>
       </BrowserRouter>
